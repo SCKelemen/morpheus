@@ -87,12 +87,44 @@ case class Branch() extends Expression
 
 
 sealed trait Expression {}
+
 sealed trait Statement {}
-sealed trait Token { val token: String}
-sealed trait Keyword extends  Token {}
 
-case class Comment(value: String) extends  Token { val token = "//"}
 
+sealed trait TokenKind { val token: String}
+sealed trait Keyword extends  TokenKind {}
+
+case class EOF() extends TokenKind { val token = ""}
+
+case class Identity() extends TokenKind { val token = ""}
+case class Integer()  extends TokenKind { val  token = ""}
+
+case class LBrack() extends TokenKind { val token = "["}
+case class RBrack() extends TokenKind { val token = "]"}
+case class LBrace() extends TokenKind { val token = "{"}
+case class RBrace() extends TokenKind { val token = "}"}
+case class LParen() extends TokenKind { val token = "("}
+case class RParen() extends TokenKind { val token = ")"}
+case class LChev()  extends TokenKind { val token = "<"}
+case class RChev()  extends TokenKind { val token = ">"}
+
+case class Dot()    extends TokenKind { val token = "."}
+case class Comma()  extends TokenKind { val token = ","}
+case class Semi()   extends TokenKind { val token = ";"}
+case class Colon()  extends TokenKind { val token = ":"}
+
+case class Eql()    extends TokenKind { val token = "=="}
+case class Neql()   extends TokenKind { val token = "!="}
+case class Assign() extends TokenKind { val token = "="}
+
+case class Pipe() extends TokenKind { val token = "|"}
+case class Bang() extends TokenKind { val token = "!"}
+case class Amp()  extends TokenKind { val token = "&"}
+
+case class Neg()  extends TokenKind { val token = "-"}
+case class Sum()  extends TokenKind { val token = "+"}
+case class Mul()  extends TokenKind { val token = "*"}
+case class Quo()  extends TokenKind { val token = "/"}
 
 case class Type() extends Keyword { val token = "type"}
 case class Switch() extends Keyword { val token = "switch"}
@@ -103,3 +135,7 @@ case class If() extends  Keyword { val token = "if"}
 case class Else() extends  Keyword { val token = "else"}
 case class Func() extends  Keyword { val token = "func"}
 case class Let() extends  Keyword { val token = "let"}
+
+
+case class Token(kind: TokenKind, value: String)
+
