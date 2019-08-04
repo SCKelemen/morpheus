@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a943c83-2aeb-4ddb-86e7-98f7cd81f09a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/us/kelemen/morpheus/bananas.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/us/kelemen/morpheus/bananas.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/us/kelemen/morpheus/bananas.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/us/kelemen/morpheus/bananas.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="236">
+              <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
               <folding>
                 <element signature="e#29#48#0" expanded="true" />
               </folding>
@@ -78,10 +79,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
-    <option name="y" value="669" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="x" value="1444" />
+    <option name="y" value="696" />
+    <option name="width" value="2552" />
+    <option name="height" value="1409" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -145,6 +146,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -212,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564875781563</updated>
-      <workItem from="1564875783871" duration="3089000" />
+      <workItem from="1564875783871" duration="4069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3089000" />
+    <option name="totallyTimeSpent" value="4069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1444" y="696" width="2552" height="1409" extended-state="6" />
@@ -263,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/us/kelemen/morpheus/bananas.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="236">
+          <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
           <folding>
             <element signature="e#29#48#0" expanded="true" />
           </folding>

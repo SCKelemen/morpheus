@@ -38,10 +38,10 @@ case class List[T](head: T, tail: List[T])
 
 class Stack[T](list: List[T]) {
   var items: List[T] = list
+  var count: Int = 0
 
   def Depth(): Int = {
-    // recurse the list
-      0
+    count
   }
 
   def Top(): T = {
@@ -50,11 +50,42 @@ class Stack[T](list: List[T]) {
 
   def Pop(): T = {
     val head = items.head
+
     items = items.tail
+    count -= 1
+
     return head
   }
 
   def Push(item: T) = {
-     items = List(item, items)
+    items = List(item, items)
+    count += 1
   }
 }
+
+
+class Queue[T](list: List[T] ) {
+  var items: List[T] = list
+  var count: Int = 0
+
+  def Enqueue(item: T) = {
+    items = List(item, items)
+    count +=1
+
+  }
+
+  def Dequeue(item: T) = {
+
+  }
+
+}
+
+
+case class Expression()
+
+class Expr {}
+
+class IfExpr extends Expr {
+
+}
+
