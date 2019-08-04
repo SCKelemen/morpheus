@@ -81,11 +81,25 @@ class Queue[T](list: List[T] ) {
 }
 
 
-case class Expression()
 
-class Expr {}
+case class Branch() extends Expression
 
-class IfExpr extends Expr {
 
-}
 
+sealed trait Expression {}
+sealed trait Statement {}
+sealed trait Token { val token: String}
+sealed trait Keyword extends  Token {}
+
+case class Comment(value: String) extends  Token { val token = "//"}
+
+
+case class Type() extends Keyword { val token = "type"}
+case class Switch() extends Keyword { val token = "switch"}
+case class Return() extends Keyword { val token = "return"}
+case class True() extends Keyword { val token = "true"}
+case class False() extends Keyword { val token = "false"}
+case class If() extends  Keyword { val token = "if"}
+case class Else() extends  Keyword { val token = "else"}
+case class Func() extends  Keyword { val token = "func"}
+case class Let() extends  Keyword { val token = "let"}
